@@ -5,7 +5,7 @@ const app = express();
 
 // React
 const React = require("react");
-const renderToString = require("react-dom/server").renderToString;
+const { renderToString } = require("react-dom/server");
 const Home = require("./client/components/Home").default;
 
 app.get("/", (req,res)=>{
